@@ -676,6 +676,47 @@
     color: var(--primary);
   }
   
+  /* Experience List */
+  .experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experience-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .experience-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 1rem;
+  }
+
+  .experience-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Skills Category Title */
+  .skills-category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .skills-category-title:first-child {
+    margin-top: 0;
+  }
+
   /* Tabs */
   .tabs {
     width: 100%;
@@ -683,7 +724,7 @@
   
   .tab-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: var(--card);
     border: 1px solid var(--card-border);
     border-radius: var(--radius);
@@ -1011,4 +1052,196 @@
   
   .mt-20 {
     margin-top: 1.25rem;
+  }
+
+  /* ===== Light Theme Overrides ===== */
+
+  /* Header */
+  .light-theme .header {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(0, 151, 167, 0.15);
+  }
+
+  /* Navigation Links */
+  .light-theme .nav-link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .light-theme .nav-link:hover,
+  .light-theme .nav-link.active {
+    color: var(--primary);
+  }
+
+  /* Welcome Popup */
+  .light-theme .welcome-popup {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .light-theme .popup-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: var(--primary);
+  }
+
+  .light-theme .popup-content p {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Hero */
+  .light-theme .hero-subtitle {
+    color: rgba(0, 151, 167, 0.85);
+  }
+
+  .light-theme .hero-description {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Cards */
+  .light-theme .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 151, 167, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .light-theme .card:hover {
+    border-color: rgba(0, 151, 167, 0.5);
+  }
+
+  .light-theme .card-subtitle {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .light-theme .card-content {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .light-theme .card-content strong {
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  /* Experience List */
+  .light-theme .experience-list li {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .light-theme .experience-list li::before {
+    color: var(--primary);
+  }
+
+  /* Meta Items */
+  .light-theme .meta-item {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Tabs */
+  .light-theme .tab-button {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .light-theme .tab-button.active {
+    background-color: rgba(0, 151, 167, 0.1);
+    color: var(--primary);
+  }
+
+  .light-theme .tab-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 151, 167, 0.2);
+  }
+
+  /* Skills */
+  .light-theme .skill-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 151, 167, 0.2);
+  }
+
+  .light-theme .skill-item:hover {
+    border-color: var(--primary);
+  }
+
+  .light-theme .skill-name {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .light-theme .skill-item:hover::after {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+  }
+
+  .light-theme .skills-category-title {
+    border-bottom-color: rgba(0, 151, 167, 0.2);
+  }
+
+  /* Publications */
+  .light-theme .publication-card::after {
+    background-color: rgba(0, 151, 167, 0.08);
+  }
+
+  /* Contact */
+  .light-theme .contact-value {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .light-theme .contact-icon {
+    background-color: rgba(0, 151, 167, 0.1);
+  }
+
+  /* Form */
+  .light-theme .form-input,
+  .light-theme .form-textarea {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 151, 167, 0.3);
+  }
+
+  .light-theme .form-input::placeholder,
+  .light-theme .form-textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .light-theme .form-input:focus,
+  .light-theme .form-textarea:focus {
+    border-color: var(--primary);
+  }
+
+  /* Footer */
+  .light-theme .footer {
+    border-top-color: rgba(0, 151, 167, 0.15);
+  }
+
+  .light-theme .copyright {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Section Borders */
+  .light-theme .section {
+    border-top-color: rgba(0, 151, 167, 0.15);
+  }
+
+  /* Mobile Nav */
+  .light-theme .mobile-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+  }
+
+  .light-theme .mobile-nav-link {
+    color: var(--primary);
+  }
+
+  .light-theme .mobile-nav-link:hover {
+    color: var(--primary-hover);
+  }
+
+  /* Badge */
+  .light-theme .badge {
+    background-color: rgba(0, 151, 167, 0.12);
+    color: var(--primary);
+  }
+
+  /* Outline Button */
+  .light-theme .outline-button {
+    border-color: rgba(0, 151, 167, 0.4);
+    color: var(--primary);
+  }
+
+  .light-theme .outline-button:hover {
+    background-color: rgba(0, 151, 167, 0.08);
+    border-color: var(--primary);
   }
